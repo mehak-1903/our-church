@@ -5,20 +5,19 @@
 	box-sizing: border-box;
 }
 .container{
-	width: 550px;
-	margin: 5px auto;
+	margin: auto;
 	padding: 8px;
+	width: 36%;
 }
 .header{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-    /* padding-bottom: 10px; */
 }
 .header p{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 795;
-    margin-bottom: 6px;
+    padding: 5px 0px;
 }
 hr{
 	width: 100%;
@@ -28,19 +27,18 @@ hr{
 .heading{
 	width: 100%;
 	text-align: center;
-	font-size: 30px;
-	margin: 8px;
-	margin-right: 25px;
-    	/*padding: 5px;*/
+	font-size: 26px;
+	margin: 8px 0px;
+    padding: 5px;
 	color: rgb(19, 31, 154, 1);
 }
 .sub-header{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin: 15px 0;
+	margin: 12px 0;
 	gap: 15px;
-    	height: 105px;
+    height: 107px;
 }
 .service{
 	background-color: rgba(93, 182, 250, 1);
@@ -50,9 +48,8 @@ hr{
 }
 .service h6{
 	text-align: center;
-	/*font-size: 10px;*/
+	font-size: 10px;
 	margin-top: 3px;
-	/* font-weight: bolder; */
 	color: rgba(14, 61, 115, 1);
 	
 }
@@ -63,7 +60,7 @@ hr{
 	color: rgba(186, 223, 245, 1);
 }
 .service p{
-	font-size: 9.8px;
+	font-size: 9px;
 	font-weight: 600;
 	margin: 5px;
 	text-align: center;
@@ -77,7 +74,6 @@ hr{
 }
 .ministry h6{
 	text-align: center;
-	/* font-size: 10px; */
 	margin-top: 3px;
 	font-weight: bold;
 	color: rgba(215, 222, 236, 1);
@@ -89,7 +85,7 @@ hr{
 	color: rgba(136, 140, 158, 1);
 }
 .ministry p{
-	font-size: 9.8px;
+	font-size: 9px;
 	font-weight: 600;
 	margin: 5px;
 	text-align: center;
@@ -97,9 +93,9 @@ hr{
 }
 .hero-section{
 	width: 100%;
-	/*margin-top: 10px;*/
-    	background-image: url('https://readleadmag.com/wp-content/uploads/2024/01/LEAD-Blog-Banner-4.png');
-	height: 210px;;
+	margin-top: 10px;
+    background-image: url('https://readleadmag.com/wp-content/uploads/2024/01/LEAD-Blog-Banner-4.png');
+	height: 175px;
 	background-size: cover;
 	overflow: hidden;
 	background-position: center;
@@ -112,7 +108,6 @@ hr{
 	display: flex;
 	justify-content: space-between;
 	gap: 5px;
-	margin-bottom: 21px;
 }
 .text{
 	width: 65%;
@@ -136,7 +131,7 @@ hr{
 }
 .sub-text p{
 	width: 100%;
-	font-size: 10.2px;
+	font-size: 8.5px;
 	line-height: 13px;
 }
 .image{
@@ -144,8 +139,7 @@ hr{
 }
 .image img{
 	width: 176px; 
-	/* background-size: cover; */
-    height: 120px;
+    height: 100px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -179,4 +173,61 @@ hr{
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
+}
+
+/* Responsive for tablet */
+@media(max-width: 1024px){
+	.container{
+		width: 55%;
+	}
+	.header p{
+		font-size: 15px;
+	}
+	.heading{
+		margin: 0px;
+		padding: 10px;
+		font-size: 30px;
+	}
+	.sub-header{
+		height: 125px;
+	}
+	.service h6{
+		font-size: 12px;
+	}
+	.service p{
+		font-size: 10px;
+	}
+	.ministry h6{
+		font-size: 12px;
+	}
+	.ministry p{
+		font-size: 10px;
+	}
+	.hero-section{
+		height: 195px;
+	}
+	.text h2{
+		font-size: 1.25rem;
+	}
+	.text p{
+		font-size: 1.2rem;
+	}
+	.sub-text p{
+		font-size: 0.6rem;
+	}
+	.image{
+		overflow: hidden;
+	}
+	.image img{
+		height: 114px;
+	}
+	.pastor-info{
+		padding: 15px 10px;
+	}
+	.pastor-info p{
+		font-size: 11px;
+	}
+	.footer{
+		font-size: 1rem;
+	}
 }
